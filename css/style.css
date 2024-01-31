@@ -39,6 +39,28 @@ header {
     z-index: 1;
 }
 
+.heading {
+    color: #14183E;
+    text-align: center;
+    font-family: "Volkhov", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.subheading {
+    color: #5E6282;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 .decoration {
     position: absolute;
     top: 0;
@@ -46,9 +68,6 @@ header {
     z-index: -1;
 }
 
-.decoration img {
-    width: 45vw;
-}
 
 .header__logo {
     height: 30px;
@@ -95,6 +114,7 @@ header {
     display: flex;
     align-self: center;
     justify-content: space-between;
+    margin-bottom: 105px;
 }
 
 .hero__right {
@@ -120,7 +140,7 @@ header {
     margin-bottom: 24px;
 }
 
-.hero__left h1 {
+.hero__heading {
     color: #181E4B;
     font-family: "Volkhov", sans-serif;
     font-size: 84px;
@@ -129,6 +149,8 @@ header {
     line-height: 89px; /* 105.952% */
     letter-spacing: -3.36px;
     margin-bottom: 30px;
+    text-align: left;
+    text-transform: none;
 }
 
 .hero__description {
@@ -184,4 +206,78 @@ header {
 
 .hero__buttons p {
     color: #686D77;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 120px;
+    background: url("../img/svg/category-decore.svg") no-repeat top right;
+}
+
+.category .heading {
+    margin-bottom: 60px;
+}
+
+.category__cards {
+    display: flex;
+    align-items: center;
+}
+
+.category__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 315px;
+    margin-right: 30px;
+    padding: 40px 40px 45px;
+    border-radius: 36px;
+}
+
+.category__card:hover {
+    background-color: #FFF;
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.category__card:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: -35px;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px 0px 10px 0px;
+    background: #DF6951;
+    z-index: -1;
+}
+
+
+.category__card img {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.category__card h3 {
+    color: #1E1D4C;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.category__card p {
+    color: #5E6282;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
 }
