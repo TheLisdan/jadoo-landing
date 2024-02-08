@@ -348,6 +348,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
+    border-radius: 0 0 23px 23px;
     bottom: 0;
     background-color: #fff;
     font-family: "Poppins", sans-serif;
