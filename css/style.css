@@ -20,7 +20,7 @@ a, a:active, a:visited, a:hover {
     color: #212832;
 }
 
-main, section {
+main {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -212,7 +212,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 120px;
+    margin-bottom: 155px;
     background: url("../img/svg/category-decore.svg") no-repeat top right;
 }
 
@@ -280,4 +280,97 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+}
+
+.destinations {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 185px;
+}
+
+.destinations__cards {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.destinations__card {
+    width: 315px;
+    position: relative;
+    margin-left: 35px;
+    height: 455px;
+    border-radius: 24px;
+    background-size: cover;
+    box-shadow: 0px 100px 80px 0px rgba(0,0,0,0.02),
+    0px 65px 47px 0px rgba(0,0,0,0.015),
+    0px 36px 26px 0px rgba(0,0,0,0.012),
+    0px 20px 13px 0px rgba(0,0,0,0.01),
+    0px 8px 7px 0px rgba(0,0,0,0.008),
+    0px 2px 3px 0px rgba(0,0,0,0.005);
+}
+
+.destinations__card:first-child {
+    margin-left: 0;
+}
+
+.destinations__card:last-child {
+    margin-left: 60px;
+    position: relative;
+}
+
+.destinations__card:last-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/svg/destinations-decore.svg) no-repeat;
+    width: 31%;
+    height: 57%;
+    z-index: -1;
+    bottom: 50px;
+    right: -60px;
+}
+
+#destionations__card__rome {
+    background: url(../img/rome.png) center center no-repeat;
+}
+
+#destionations__card__uk {
+    background: url(../img/uk.png) center center no-repeat;
+}
+
+#destionations__card__europe {
+    background: url(../img/europe.png) center center no-repeat;
+}
+
+.destinations__card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    line-height: 124%;
+    color: #5E6282;
+    height: 130px;
+    width: 100%;
+    padding: 25px 25px 40px 20px;
+}
+
+.destinations__card-heading {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.destinations__card-subheading {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+
+.destinations__card-subheading img {
+    margin-right: 15px;
 }
