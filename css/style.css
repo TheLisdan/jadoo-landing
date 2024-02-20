@@ -505,3 +505,119 @@ header {
 .app__right-going p img {
     margin-right: 15px;
 }
+
+.testimonials {
+    display: flex;
+    margin-bottom: 140px;
+}
+
+.testimonials__left {
+    margin-right: 125px;
+}
+
+.testimonials__left .heading, .testimonials__left .subheading {
+    text-align: left;
+}
+
+.testimonials__radios {
+    margin-top: 80px;
+    display: flex;
+}
+
+.testimonials__radios input[type="radio"] {
+    display: none;
+}
+
+.testimonials__radios label {
+    display: block;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    border: none;
+    margin-right: 26px;
+}
+
+.testimonials__radios input[type="radio"]:checked+label {
+    background-color: #39425D;
+}
+
+.testimonials__right {
+    display: flex;
+}
+
+.testimonials__cards {
+    color: #5E6282;
+    font-family: "Poppins", sans-serif;
+    margin-right: 115px;
+}
+
+.testimonials__card-active {
+    position: relative;
+    width: 500px;
+    height: 245px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 28px 68px 35px 34px;
+    box-shadow: 0px 100px 80px 0px rgba(0,0,0,0.02),
+    0px 65px 47px 0px rgba(0,0,0,0.015),
+    0px 39px 25px 0px rgba(0,0,0,0.012),
+    0px 20px 13px 0px rgba(0,0,0,0.01),
+    0px 8px 7px 0px rgba(0,0,0,0.008),
+    0px 2px 3px 0px rgba(0,0,0,0.005);
+}
+
+.testimonials__cards img {
+    position: absolute;
+    top: -34px;
+    left: -37px;
+}
+
+.testimonials__cards p {
+    line-height: 32px;
+    margin-bottom: 34px;
+    font-size: 16px;
+}
+
+.testimonials__cards b {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.testimonials__cards .testimonials__small-text {
+    font-size: 14px;
+}
+
+.testimonials__card-non-active {
+    position: relative;
+    z-index: -1;
+    bottom: 155px;
+    left: 50px;
+    width: 500px;
+    height: 245px;
+    border: #F7F7F7 solid 2px;
+    border-radius: 10px;
+    padding: 28px 68px 35px 34px;
+    box-shadow: 0px 100px 80px 0px rgba(0,0,0,0.02),
+    0px 65px 47px 0px rgba(0,0,0,0.015),
+    0px 39px 25px 0px rgba(0,0,0,0.012),
+    0px 20px 13px 0px rgba(0,0,0,0.01),
+    0px 8px 7px 0px rgba(0,0,0,0.008),
+    0px 2px 3px 0px rgba(0,0,0,0.005);
+}
+
+.testimonials__right-arrows {
+    display: flex;
+    flex-direction: column;
+    margin-top: 106px;
+}
+
+.testimonials__right-arrows img {
+    cursor: pointer;
+}
+
+.testimonials__right-arrows img:first-child {
+    margin-bottom: 58px;
+}
