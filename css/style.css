@@ -29,6 +29,7 @@ header {
     width: 100%;
     display: flex;
     position: sticky;
+    transition: all 0.4s;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +37,7 @@ header {
     padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0);
     top: 0;
-    z-index: 1;
+    z-index: 100;
 }
 
 .heading {
@@ -108,6 +109,10 @@ header {
     padding: 8px 22px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
+}
+
+.header-active {
+    background-color: #FFF;
 }
 
 .hero {
@@ -631,6 +636,7 @@ header {
 .partners {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 160px;
 }
 
 .partners__card {
@@ -643,6 +649,7 @@ header {
     border-radius: 10px;
     transition: all 0.3s;
     filter: grayscale(100%);
+    cursor: pointer;
 }
 
 .partners__card:hover {
@@ -654,4 +661,83 @@ header {
     0px 20px 13px 0px rgba(0,0,0,0.01),
     0px 8px 7px 0px rgba(0,0,0,0.008),
     0px 2px 3px 0px rgba(0,0,0,0.005)
+}
+
+.email {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 80px 145px;
+    background-color: #F9F7FE;
+    border-radius: 20px;
+    border-top-left-radius: 129px;
+    background-image: url(../img/svg/email-decore.svg);
+    background-position: 20px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 165px;
+}
+
+.email::after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    background: url(../img/svg/email-send.svg);
+}
+
+.email::before {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    right: -100px;
+    width: 155px;
+    height: 170px;
+    background: url(../img/svg/email-decore2.svg);
+}
+
+.email h2 {
+    font-family: "Poppins", sans-serif;
+    color: #5E6282;
+    line-height: 54px;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 75px;
+}
+
+.email form {
+    display: flex;
+    position: relative;
+    height: 70px;
+}
+
+.email input {
+    border: 0;
+    border-radius: 10px;
+}
+
+.email input[type=email] {
+    padding-left: 65px;
+    width: 420px;
+    margin-right: 25px;
+    background-image: url("../img/svg/email.svg");
+    background-position: 30px center;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    color: #39425D;
+    font-family: "Monsterrat", sans-serif;
+}
+
+.email input[type=submit] {
+    width: 180px;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    background: linear-gradient(180deg, rgba(255,148,109,1) 0%, rgba(255,125,104,1) 100%);
 }
