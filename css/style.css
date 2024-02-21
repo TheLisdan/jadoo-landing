@@ -7,6 +7,7 @@ html {
 
 
 body {
+    position: relative;
     color: #212832;
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
@@ -20,7 +21,7 @@ a, a:active, a:visited, a:hover {
     color: #212832;
 }
 
-main {
+main, footer {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -740,4 +741,115 @@ header {
     font-weight: 600;
     color: #FFF;
     background: linear-gradient(180deg, rgba(255,148,109,1) 0%, rgba(255,125,104,1) 100%);
+}
+
+footer {
+    padding: 0 60px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    line-height: 125%;
+    color: #5E6282;
+}
+
+.footer__info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+.footer__info__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__info__left h1 {
+    color: #181E4B;
+    font-size: 44px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.footer__info__left p {
+    font-size: 13px;
+}
+
+.footer__info__links {
+    display: flex;
+    font-size: 18px;
+}
+
+.footer__info__links a, a:active, a:hover, a:visited {
+    color: #5E6282;
+}
+
+.footer__info__links ul {
+    margin-right: 70px;
+}
+
+.footer__info__links ul:last-child {
+    margin-right: 0;
+}
+
+.footer__info__links ul li {
+    margin-bottom: 12px;
+}
+
+.footer__info__links ul li:first-child {
+    margin-bottom: 32px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #080809;
+}
+
+.footer__info__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__info__networks {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer__info__networks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer__info-instagram {
+    background: url(../img/instagram-background.png);
+    background-size: cover;
+}
+
+.footer__info__right p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer__info__app {
+    display: flex;
+}
+
+.footer__info__app a {
+    margin-right: 7px;
+}
+
+.footer__copyright {
+    font-size: 14px;
+}
+
+.bottom-decore {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
